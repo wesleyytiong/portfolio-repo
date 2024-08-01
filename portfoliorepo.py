@@ -18,10 +18,8 @@ def getData(stocks, start, end):
     covMatrix = returns.cov()
     return meanReturns, covMatrix
 
-
 #Define parameters
-stockList = ['CBA', 'BHP', 'TLS']
-stocks = [stock+'.AX' for stock in stockList]
+stocks = ['AAPL', 'NVDA', 'META']
 
 endDate = dt.datetime.now()
 startDate = endDate - dt.timedelta(days=365)
